@@ -26,8 +26,19 @@ body,html{
     display: none;
 }
 .allContents{
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
     width: 100%;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+}
+.allContents::-webkit-scrollbar{
+    display: none;
+}
+p{
+    color: white;
+    font-family: sans-serif;
+    text-align: justify;
 }
 h1{
     position: relative;
@@ -140,7 +151,7 @@ h1{
     border: unset !important;
 }
 .section1{
-    height: 100vh;
+    height: 50vh;
     width: 100% !important;
     background-color: transparent;
     position: relative;
